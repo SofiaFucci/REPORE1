@@ -1,0 +1,281 @@
+/*Inicio Reseteo*/
+
+* {
+
+    padding: 0;
+
+    margin: 0px;
+
+}
+
+.menuContainer{
+    color: aquamarine;
+background-color: brown;
+padding: 30px;
+display: flex;
+justify-content: center;
+}
+
+.menu{
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.seccionImg{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.imagenes{
+    width: 900px;
+    display: flex;  
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.piePagina{
+    display: flex;
+    justify-content:space-between ;
+}
+
+.footerItem{
+
+background-color: blueviolet;
+    border: 15px solid blue;
+    height: 200px;
+flex: 1;
+}
+
+.grid{
+
+    
+        display: grid;  
+            
+        grid-template-columns: 300px 100px; 
+                           
+        grid-template-rows: 40px 100px;
+
+        
+            display: grid;  
+                grid-template-columns: 2fr 1fr; 
+                grid-template-rows: 3fr 1fr; 
+          grid-column-gap: 10px;
+          grid-row-gap: 15px;
+          
+            }
+            
+
+            .border {
+                border: 1px solid black;
+                background-color: yellow;
+             }
+             
+
+
+             *{
+                margin: 0;
+                padding: 0;
+            }
+            
+            h1{
+                background-color: mediumseagreen;
+                color: whitesmoke;
+            }
+            
+            nav{
+                background-color: aquamarine;
+                height: 10vh;
+                display: grid;
+            }
+            
+            
+            footer{
+                background-color: mediumorchid;
+                height: 10vh;
+            }
+            
+            ul li {
+                display: inline-block;
+            }
+            
+            
+            
+            
+        body{
+            background-image: linear-gradient( to top yellow orange red);
+        }
+            
+            
+            
+            
+            .padre{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr) ;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-areas: 
+                "foto1 foto2"
+                "foto4 foto5"
+                "foto3 foto2"
+                ;
+            }
+            
+            .foto1{
+                grid-area: nav;
+            }
+            
+            .foto2{
+                grid-area: foto2;
+            }
+            
+            .foto3{
+                grid-area: foto3;
+            }
+            
+            .foto4{
+                grid-area: foto4;
+            }
+            
+            .foto5{
+                grid-area: foto5;
+            }
+            
+            .foto6{
+                grid-area: foto6;
+
+            }
+
+            .box{
+border-radius: 8px;
+height: 40px;
+width: 80px;            
+margin: 50px;
+}
+
+.box1{
+background-color: burlywood;
+}
+
+.box2{
+    background-color: crimson;
+}
+
+/*transformacion*/
+
+.box:hover{
+    transform: scale(4);
+}
+
+/*TRANSICION*/
+.box2{
+transition: all;
+transition-duration: 1.5s;
+
+}
+
+.circle1, .circle2, .circle3, .circle4,
+.circle5{
+    border-radius: 50px;
+height: 30px;
+width: 30px;
+margin: 15px;
+
+}
+
+.circle1{
+    background-color: darkcyan;
+transition: all 1.5s ease-in;
+
+}
+
+.circle2{
+    background-color: darkmagenta;
+transition: all 1.5s ease;
+}
+
+.circle3{
+    background-color: darkslateblue;
+transition: all 1.5s ease-in-out;
+}
+
+.circle4{
+    background-color: dodgerblue;
+transition: all 1.5s step-start;
+}
+
+.circle5{
+    background-color: forestgreen;
+transition: all 1.5s step-end;
+}
+
+.container-circle:hover .circle1,
+.container-circle:hover .circle2,
+.container-circle:hover .circle3,
+.container-circle:hover .circle4,
+.container-circle:hover .circle5 {
+transform: translateX(300px);
+
+}
+
+.square1, .square2{
+border-radius: 5px;
+height: 150px;
+width: 150px;
+margin: 100px;
+position: absolute;
+}
+
+.square1{
+    background-color: gold;
+}
+
+.square2{
+background-color: hotpink;
+transition: all 2s;
+}
+
+.square2:hover{
+transform: translate(50px,30px);
+
+}
+
+.combinado{
+background-color: violet;
+height: 85px;
+width: 85px;
+margin: 50px auto;
+transition: all 2s;
+}
+
+
+.combinado:hover{
+    transform: rotate(90deg) scale(3) translateX(80px);
+}
+
+.animaciones{
+width:150px ;
+height: 150PX;
+margin: 75px auto;
+background-color: tomato;
+}
+
+.animaciones:hover{
+animation: change-color 5s ;
+}
+
+@keyframes change-color{
+10%{background-color: yellowgreen;
+
+}
+25%{
+    border-radius: 50%;
+}
+ 50%{
+     width: 300px;
+ }   
+
+75%{
+    background-color: slateblue;
+}
+
+}

@@ -1,0 +1,48 @@
+/*Inicio Reseteo*/
+
+* {
+
+    padding: 0;
+
+    margin: 0px;
+
+}
+
+.menuContainer{
+    color: aquamarine;
+background-color: brown;
+padding: 30px;
+display: flex;
+justify-content: center;
+}
+
+.menu{
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.seccionImg{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.imagenes{
+    width: 900px;
+    display: flex;  
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.piePagina{
+    display: flex;
+    justify-content:space-between ;
+}
+
+.footerItem{
+
+background-color: blueviolet;
+    border: 15px solid blue;
+    height: 200px;
+flex: 1;
+}
